@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP Docker</title>
+</head>
+<body>
+    <h1>Bienvenue sur mon application Dockerisée</h1>
+    <p id="message">Chargement...</p>
+
+    <script>
+        fetch('/api/messages')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('message').textContent = data.message || data.error;
+            })
+            .catch(error => {
+                document.getElementById('message').textContent = "Erreur : " + error;
+            });
+    </script>
+
+</body>
+</html>
