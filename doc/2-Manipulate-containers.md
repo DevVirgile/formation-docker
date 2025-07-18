@@ -1,6 +1,5 @@
 # 1ere manipulation avec Docker
 
-
 ## Architecture de Docker
 
 L’architecture de Docker repose sur un modèle **client–serveur**. Elle se compose principalement de trois éléments :
@@ -49,12 +48,6 @@ Grâce à cela, plusieurs conteneurs peuvent s’exécuter isolément sur une m�
 - **Image** = plan architectural ou recette de cuisine  
 - **Conteneur** = bâtiment construit ou plat cuisiné à partir de la recette
 
-## Spreadsheet
-
-![Déploiement CI/CD avec Docker](img/docker-cli-speadsheet.jpg)
-
-## Deploiement CI/CD avec Docker
-
 ![Déploiement CI/CD avec Docker](img/docker-deploy-schema.jpg)
 
 ## On commence la pratique
@@ -65,3 +58,15 @@ Pour commencer, vérifions que l'on sait bien faire un "hello-world"
 docker run hello-world
 ```
 
+Ensuite, on peut commencer à regarder ce qui ce passe :
+
+```bash
+docker ps
+docker ps -a
+docker images
+```
+
+
+## Spreadsheet
+
+![Déploiement CI/CD avec Docker](img/docker-cli-speadsheet.jpg)

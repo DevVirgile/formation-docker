@@ -2,7 +2,8 @@
 
 ## Notions de Layers
 
-Pour 
+Pour construire une image, on part d'une image préexistente, et lui ajoute des couches (layers) par dessus.
+Pour se faire, 
 
 Exemple de Dockerfile :
 
@@ -36,3 +37,9 @@ CMD ["sh", "greetings.sh", "CMD", "$NAME_TO_GREET"]
 | **Peut être surchargé**  | ✅ Oui (avec `--entrypoint`)                  | ✅ Oui (avec `docker run ... <nouvelle cmd>`) |
 | **Combinaison possible** | ✅ Oui (ENTRYPOINT + CMD = commande + args)   | ❌ Seul, CMD est toute la commande            |
 | **Utilisation typique**  | Script ou binaire principal à exécuter        | Paramètres par défaut ou shell à exécuter    |
+
+### Pour créer son image
+
+```bash
+docker build -t monapp:local .
+```

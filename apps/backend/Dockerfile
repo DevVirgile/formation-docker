@@ -5,7 +5,6 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY config.ini .
-COPY scripts .
+COPY . .
 
 ENTRYPOINT ["python", "app.py"]

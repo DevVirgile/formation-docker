@@ -14,3 +14,4 @@
 - [Création et gestion des networks](5-Networks.md)
 - [Gestion via compose](6-Compose.md)
 - [TP Final](7-TP.md)
+- [Ressources](8-Resources.md)
